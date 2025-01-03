@@ -1,0 +1,22 @@
+ .Hero{
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-image: url('./images/welcome-hero/welcome-banner.jpg');
+background-size: cover;
+} 
+
+select{
+    background-color:transparent;
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+  }
+
+  
+#ContactUs {
+    padding-top: 80px; 
+}
+

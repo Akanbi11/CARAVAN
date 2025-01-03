@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARAVAN</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rufina:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Hero css -->
+    <link rel="stylesheet" href="/Hero.css">
+
+    <!-- AOS ANIMATIONS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body class="scroll-smooth">
+
+
+    <!-- HERO PAGE  -->
+    <div class="Hero lg:h-[47rem] md:h-[35rem] h-[30rem] w-full mb-[18rem]">
+
+        <!-- NAVBAR -->
+        <div>
+            <nav class="top-0 lg:bg-black md:bg-black bg-transparent fixed w-full py-4 transition-all duration-300"
+                id="navbar">
+                <div class="hidden md:block">
+                    <div class="flex lg:justify-center lg:space-x-[15rem] md:justify-between text-white pt-[12px]">
+                        <h1
+                            class="font-[Rufina] text-2xl leading-5 text-white tracking-widest font-bold hidden md:block">
+                            CARAVAN
+                        </h1>
+                        <div>
+                            <div class="lg:space-x-8 md:space-x-4">
+                                <a class="cursor-pointer hover:text-blue-600 font-semibold" href="#HOME">HOME</a>
+                                <a class="cursor-pointer hover:text-blue-600 font-semibold" href="#ABOUTUS">ABOUT US</a>
+                                <a class="cursor-pointer hover:text-blue-600 font-semibold" href="#RANGE">RANGE OF
+                                    CARS</a>
+                                <a class="cursor-pointer hover:text-blue-600 font-semibold"
+                                    href="#Pre-OwnedCars">PRE-OWNED CARS</a>
+                                <a class="cursor-pointer hover:text-blue-600 font-semibold" href="#BRANDS">BRANDS</a>
+                                <a class="cursor-pointer hover:text-blue-600 font-semibold" href="#ContactUs">CONTACT
+                                    US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- SMALL SCREEN NAV TOGGLE -->
+        <div class="md:hidden">
+            <header class="shadow mb-2">
+                <div
+                    class="relative flex max-w-screen-xl bg-black flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+                    <h1 class="font-[Rufina] text-2xl leading-5 text-white tracking-widest font-bold">CARAVAN</h1>
+
+                    <!-- Toggle button (this is the nav-toggle element) -->
+                    <button id="nav-toggle"
+                        class="absolute top-5 right-7 cursor-pointer border border-white bg-white md:hidden">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                    <!-- Hidden Navigation menu (nav-content) -->
+                    <nav id="nav-content" aria-label="Header Navigation"
+                        class="hidden md:flex md:flex-row md:items-start">
+                        <ul class="flex flex-col items-center text-white space-y-2 md:ml-auto md:flex-row md:space-y-0">
+                            <li class="cursor-pointer hover:text-blue-600 font-semibold md:pt-10"><a
+                                    href="#HOME">HOME</a></li>
+                            <li class="cursor-pointer hover:text-blue-600 font-semibold md:pt-10"><a
+                                    href="#ABOUTUS">ABOUT US</a></li>
+                            <li class="cursor-pointer hover:text-blue-600 font-semibold md:pt-10"><a href="#RANGE">RANGE
+                                    OF CARS</a></li>
+                            <li class="cursor-pointer hover:text-blue-600 font-semibold md:pt-10"><a
+                                    href="#Pre-OwnedCars">PRE-OWNED CARS</a></li>
+                            <li class="cursor-pointer hover:text-blue-600 font-semibold md:pt-10"><a
+                                    href="#ContactUs">CONTACT US</a></li>
+                            <li class="cursor-pointer hover:text-blue-600 font-semibold"><a href="#BRANDS">BRANDS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+
+
+
+        <!-- Home Page -->
+        <div id="HOME">
+            <!-- HERO BACKGROUND IMAGE STYLE -->
+            <div>
+
+                <!-- HERO PAGE TEXT -->
+                <div class="text-white text-center lg:pt-[15rem] md:pt-[15rem] pt-[5rem]  font-poppins space-y-6">
+
+                    <h2 class="lg:text-4xl md:text-2xl  font-bold">YOUR ULTIMATE ONLINE CAR MARKETPLACE</h2>
+
+                    <p>Caravan, the largest online car market, is your
+                        one-stop destination for
+                        finding the perfect
+                        vehicle
+                        to suit your needs.</p>
+
+                    <div class="flex justify-center">
+                        <a href="#ContactUs"><button
+                                class=" w-[13rem] bg-blue-600 font-semibold text-center py-4 px-2 rounded-md shadow text-white">Contact
+                                Us</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ABOUT US PAGE -->
+    <div id="ABOUTUS">
+        <h2 class="md:hidden block text-blue-600 text-4xl text-center font-semibold mb-4">About Us</h2>
+        <hr class="border border-blue-600 md:hidden block w-[3rem] mx-auto"> <br> <br>
+        <div class="lg:flex md:flex flex-none justify-center md:pl-5 md:p-2 space-x-8 mb-[10rem]">
+            <!-- ABOUT US TEXT -->
+            <div class="space-y-6 font-[poppins] p-4 mb-6">
+                <h2 class="text-blue-600 text-4xl hidden md:block text-left font-semibold mb-2">About Us</h2>
+                <hr class="border border-blue-600 hidden md:block pl-[5rem] w-[3rem]">
+                <p class="text-xl lg:text-left md:text-left text-center font-bold">Your Trusted Partner In Finding A Car
+                </p>
+
+                <p>Caravan, the largest online car market, is your one-stop destination for finding the <span
+                        class="hidden sm:inline"><br></span> perfect
+                    vehicle to
+                    suit your needs.
+                    Whether you're shopping for a family car, a <span class="hidden sm:inline"><br></span> business
+                    fleet, or a personal ride, Caravan makes
+                    it easy to
+                    browse, compare,
+                    and <span class="hidden sm:inline"><br></span> choose the right car. We bring you a vast collection
+                    of detailed information, expert <span class="hidden sm:inline"><br></span>
+                    reviews, and
+                    comprehensive
+                    listings to ensure a smooth buying experience. At <span class="hidden sm:inline"><br></span>
+                    Caravan, we don’t just sell cars; we help you
+                    make
+                    informed decisions that fit your <span class="hidden sm:inline"><br></span> lifestyle and budget.
+                </p>
+
+                <div class="lg-flex-none md:flex-none flex lg:pl-0 md:pl-0 pl-[4rem]">
+                    <a href="#ContactUs"> <button
+                            class="py-4 px-2 w-[10rem] bg-blue-600 font-semibold rounded-md text-white">
+                            Contact Us</button></a>
+                </div>
+
+            </div>
+
+            <div>
+                <img class="lg:w-[700px] lg:h-[500px] md:w-[700px] md:h-[550px] h-[400px] w-[400px]"
+                    src="/images/featured-cars/fc1.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- ABOUT US CARDS -->
+        <div>
+            <div
+                class="flex flex-wrap justify-center font-[poppins] lg:space-x-[1rem] md:space-y-[2rem] space-y-[2rem] lg:space-y-[0rem] mb-[20rem]">
+
+                <!-- CARDS -->
+                <div
+                    class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[30rem] lg:h-[30rem] md:w-[30rem] md:h-[30rem] h-[30rem] w-[15rem] pt-[5rem] hover:bg-blue-600 group transition duration-300">
+                    <!-- ICON HEAD -->
+                    <div class="flex justify-center">
+                        <img src="/images/Icons/Component 1.png" alt="Image" class="">
+                    </div>
+                    <div class=" space-y-[2rem]">
+                        <h3 class="lg:text-2xl md:text-2xl text-lg  font-semibold text-gray-800 group-hover:text-white">
+                            largest dealership of
+                            cars
+                        </h3>
+
+                        <p class="lg:text-xl md:text-xl text-sm text-gray-600 group-hover:text-white">
+                            Discover the ultimate destination <br>
+                            for car buyers at the largest dealership of cars. <br>
+                            Offering an extensive inventory of vehicles,
+                        </p>
+
+                    </div>
+                    <div class="flex justify-center">
+                        <hr class="border border-blue-600 w-[2rem]">
+                    </div>
+                </div> <br> <br>
+
+
+                <!-- Repeat Cards -->
+                <div
+                    class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[30rem] lg:h-[30rem] md:w-[30rem] md:h-[30rem] h-[30rem] w-[15rem] pt-[5rem] hover:bg-blue-600 group transition duration-300">
+                    <!-- ICON HEAD -->
+                    <div class="flex justify-center">
+                        <img src="/images/Icons/Component 2.png" alt="Image">
+                    </div>
+
+                    <div class=" space-y-[2rem]">
+                        <h3 class="lg:text-2xl md:text-2xl text-lg  font-semibold text-gray-800 group-hover:text-white">
+                            unlimited repair
+                            warranty
+                        </h3>
+
+                        <p class="lg:text-xl md:text-xl text-sm text-gray-600 group-hover:text-white">
+                            Enjoy peace of mind with our <br>
+                            Unlimited Repair Warranty, <br>
+                            designed to keep you covered no matter what
+                        </p>
+
+                    </div>
+                    <div class="flex justify-center">
+                        <hr class="border border-blue-600 w-[2rem]">
+                    </div>
+                </div>
+
+
+                <!-- Repeat Cards -->
+                <div
+                    class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[30rem] lg:h-[30rem] md:w-[30rem] md:h-[30rem] h-[30rem] w-[15rem] pt-[5rem] hover:bg-blue-600 group transition duration-300">
+                    <!-- ICON HEAD -->
+                    <div class="flex justify-center">
+                        <img src="/images/Icons/Component 3.png" alt="Image">
+                    </div>
+
+                    <div class=" space-y-[2rem]">
+                        <h3 class="lg:text-2xl md:text-2xl text-lg font-semibold text-gray-800 group-hover:text-white">
+                            insurance support</h3>
+
+                        <p class="lg:text-xl md:text-xl text-sm text-gray-600 mt-2 group-hover:text-white">
+                            Caravan makes insurance easy. <br>
+                            Get the coverage you need <br>
+                            with expert support and 24/7 claims assistance
+                        </p>
+
+                    </div>
+                    <div class="flex justify-center">
+                        <hr class="border border-blue-600 w-[2rem]">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> <br> <br>
+    </div>
+
+    <!-- RANGE OF CARS SECTION -->
+    <div id="RANGE">
+        <div class="font-[Poppins] mb-[10rem]">
+            <!-- Section Title -->
+            <div class="mb-[4rem]">
+                <h2 class="text-3xl text-center font-bold text-blue-600">Range Of Cars</h2> <br>
+                <hr class="border border-blue-600 w-[3rem] mx-auto"> <!-- Horizontal line below the title -->
+            </div>
+
+            <!-- Range Cards -->
+            <div
+                class="bg-white shadow-2xl rounded-lg mx-auto space-y-[3rem] p-2 text-center lg:w-[60rem] lg:h-[20rem] md:w-[30rem] md:h-[40rem] h-[40rem] w-[15rem] pt-[5rem]">
+                <div class="">
+
+                    <!-- Filter Section -->
+                    <div
+                        class="lg:flex justify-center md:space-y-[3rem] space-y-[3rem] lg:space-y-[0rem] lg:space-x-[10rem]">
+
+                        <!-- Body Style Filter -->
+                        <div>
+                            <p>Select Body Style</p> <br>
+                            <!-- Dropdown for selecting body style -->
+                            <select name="Range" id="bodyStyle"
+                                class="border border-gray-300 rounded-sm p-3 w-[10rem] border-hidden h-[3rem] bg-gray-100 text-gray-500">
+                                <option value="Default">Style</option> <!-- Default option -->
+                                <option value="Jeep">Jeep</option> <!-- Option for Jeep -->
+                                <option value="Sedan">Sedan</option> <!-- Option for Sedan -->
+                                <option value="Van">Van</option> <!-- Option for Van -->
+                            </select>
+                        </div>
+
+                        <!-- Year Range Filter -->
+                        <div>
+                            <p>Select Year</p> <br>
+                            <!-- Dropdown for selecting the year -->
+                            <select name="Year-range" id="yearRange"
+                                class="border border-gray-300 rounded-sm p-3 w-[10rem] border-hidden bg-gray-100 text-gray-500">
+                                <option value="Default">Year</option> <!-- Default option -->
+                                <option value="2015">2015</option> <!-- Option for 2015 -->
+                                <option value="2016">2016</option> <!-- Option for 2016 -->
+                                <option value="2017">2017</option> <!-- Option for 2017 -->
+                            </select>
+                        </div>
+
+                        <!-- Car Model Filter -->
+                        <div>
+                            <p>Select Model</p> <br>
+                            <!-- Dropdown for selecting car model -->
+                            <select name="car-range" id="carModel"
+                                class="border border-gray-300 rounded-sm p-3 w-[10rem] border-hidden bg-gray-100 text-gray-500">
+                                <option value="Default">Model</option> <!-- Default option -->
+                                <option value="Chevrolet">Chevrolet</option> <!-- Option for Chevrolet -->
+                                <option value="Lamborghini">Lamborghini</option> <!-- Option for Lamborghini -->
+                                <option value="Mercedes Benz">Mercedes Benz</option> <!-- Option for Mercedes Benz -->
+                                <option value="BMW">BMW</option> <!-- Option for BMW -->
+                                <option value="Porsche">Porsche</option> <!-- Option for Porsche -->
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Apply Filters Button -->
+                <button id="filterButton" class="py-4 px-2 font-semibold rounded-md bg-blue-600 text-white">
+                    Apply Filters
+                </button> <!-- Button to apply the selected filters -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Pre-Owned Cars -->
+    <div id="Pre-OwnedCars">
+        <div class="font-[poppins] mb-[5rem]">
+            <div class="text-center mb-[5rem]">
+                <p class="mb-3">Checkout the featured</p>
+                <p class="mb-3">Cars</p>
+                <h2 class="font-bold text-3xl mb-6 text-blue-600">Pre-Owned Cars</h2>
+                <hr class="border border-blue-600 w-[3rem] mx-auto"> <br> <br>
+            </div>
+
+            <!-- Cars 1st row -->
+
+            <!-- 1ST CAR STARTS -->
+            <div
+                class="flex flex-wrap justify-center lg:space-x-[3rem] md:space-x-[0rem] space-x-[0rem] lg:mb-[5rem] lg:space-y-[0rem] md:space-y-[4rem] md:mb-[2rem] mb-[0rem]">
+
+                <div class="car-card" data-style="Jeep" data-year="2017" data-model="BMW">
+                    <div
+                        class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[28rem] lg:h-[28rem] md:w-[30rem] md:h-[30rem] h-[29rem] w-[26rem] pt-[5rem]">
+                        <div class="flex justify-center">
+                            <img src="/images/featured-cars/fc1.png" alt="Image" class="min-w-[20rem]">
+                        </div>
+                        <hr class="lg:w-[26.5rem] md:w-[26.5rem] w-[24rem] border border-gray-200 ">
+                        <div class="space-y-4">
+                            <div class="flex space-x-[3rem]">
+                                <p class="lg:text-xl md:text-lg text-lg  font-semibold text-gray-800">Year: 2017
+                                </p>
+                                <p class="lg:text-xl md:text-xl text-lg font-semibold">3100 Mi</p>
+                                <p class="lg:text-xl md:text-xl text-lg font-semibold">240HP</p>
+                            </div>
+                            <P class="text-left lg:text-xl md:text-xl text-lg font-semibold">Automatic</P>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="space-y-[1rem] lg:text-left md:text-center text-center">
+                        <h3 class="font-semibold text-3xl">BMW 6-series gran Coupe</h3>
+                        <p class="font-semibold text-lg">$89,395</p>
+                        <p class="text-wrap text-gray-600">A perfect blend of luxury, performance, and elegance, <span
+                                class="hidden sm:inline"><br></span> the BMW 6-Series Gran Coupe offers a striking
+                            design <span class="hidden sm:inline"><br></span> with a spacious four-door layout.</p>
+                    </div>
+                </div>
+                <!-- 1ST CAR ENDS -->
+
+                <!-- 2ND CAR STARTS -->
+                <div class="car-card" data-style="Sedan" data-year="2016" data-model="Chevrolet">
+                    <div
+                        class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[28rem] lg:h-[28rem] md:w-[30rem] md:h-[30rem] h-[29rem] w-[26rem] pt-[5rem]">
+                        <div class="flex justify-center">
+                            <img src="/images/featured-cars/fc2.png" alt="Image" class="min-w-[23rem]">
+                        </div>
+                        <hr class="lg:w-[26.5rem] md:w-[26.5rem] w-[24rem] border border-gray-200 ">
+                        <div class="space-y-4">
+                            <div class="flex space-x-[3rem]">
+                                <p class="lg:text-xl md:text-lg text-lg  font-semibold text-gray-800">Year: 2016
+                                </p>
+                                <p class="lg:text-xl md:text-xl text-lg font-semibold">3500 Mi</p>
+                                <p class="lg:text-xl md:text-xl text-lg font-semibold">260HP</p>
+                            </div>
+                            <P class="text-left lg:text-xl md:text-xl text-lg font-semibold">Automatic</P>
+                        </div>
+                    </div> <br>
+                    <div class="space-y-[1rem] lg:text-left md:text-center text-center">
+                        <h3 class="font-semibold text-3xl">Chevrolet camaro wmv20</h3>
+                        <p class="font-semibold text-lg">$66,575</p>
+                        <p class="text-wrap text-gray-600">Unleash pure adrenaline with the Chevrolet Camaro <span
+                                class="hidden sm:inline"><br></span> WMV20. With its iconic muscle car design, powerful
+                            <span class="hidden sm:inline"><br></span> performance.
+                        </p>
+                    </div>
+                </div>
+                <!-- 2ND CAR ENDS -->
+
+                <!-- 3RD CAR STARTS -->
+                <div class="car-card" data-style="Sedan" data-year="2017" data-model="Lamborghini">
+                    <div
+                        class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[28rem] lg:h-[28rem] md:w-[30rem] md:h-[30rem] h-[29rem] w-[26rem] pt-[5rem]">
+                        <div class="flex justify-center">
+                            <img src="/images/featured-cars/fc3.png" alt="Image" class="min-w-[25rem]">
+                        </div>
+                        <hr class="lg:w-[26.5rem] md:w-[26.5rem] w-[24rem] border border-gray-200 ">
+                        <div class="space-y-4">
+                            <div class="flex space-x-[3rem]">
+                                <p class="lg:text-xl md:text-lg text-lg  font-semibold text-gray-800">Year: 2017
+                                </p>
+                                <p class="lg:text-xl md:text-xl text-lg font-semibold">4000 Mi</p>
+                                <p class="lg:text-xl md:text-xl text-lg font-semibold">300HP</p>
+                            </div>
+                            <P class="text-left lg:text-xl md:text-xl text-lg font-semibold">Automatic</P>
+                        </div>
+                    </div> <br>
+                    <div class="space-y-[1rem] lg:text-left md:text-center text-center">
+                        <h3 class="font-semibold text-3xl">Lamborghini v520</h3>
+                        <p class="font-semibold text-lg">$125,250</p>
+                        <p class="text-wrap text-gray-600">Experience unparalleled speed and sophistication with <span
+                                class="hidden sm:inline"><br></span> the Lamborghini V520. This masterpiece incorporates
+                            <span class="hidden sm:inline"><br></span> cutting-edge engineering.
+                        </p>
+                    </div>
+                </div>
+                <!-- 3RD CAR ENDS -->
+
+            </div>
+            <!-- Cars 2nd row -->
+            <div>
+                <div>
+
+                    <!-- 4TH CAR START -->
+                    <div
+                        class="flex flex-wrap justify-center lg:space-x-[3rem] space-x-[0rem] md:space-x-[0rem] lg:space-y-[0rem] md:space-y-[2rem]">
+
+                        <div class="car-card" data-style="Jeep" data-year="2015" data-model="Infiniti">
+                            <div
+                                class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[28rem] lg:h-[28rem] md:w-[30rem] md:h-[30rem] h-[29rem] w-[26rem] pt-[5rem]">
+                                <div class="flex justify-center">
+                                    <img src="/images/featured-cars/fc4.png" alt="Image" class="min-w-[20rem]">
+                                </div>
+                                <hr class="lg:w-[26.5rem] md:w-[26.5rem] w-[24rem] border border-gray-200 ">
+                                <div class="space-y-4">
+                                    <div class="flex space-x-[3rem]">
+                                        <p class="lg:text-xl md:text-lg text-lg  font-semibold text-gray-800">Year: 2015
+                                        </p>
+                                        <p class="lg:text-xl md:text-xl text-lg font-semibold">3100 Mi</p>
+                                        <p class="lg:text-xl md:text-xl text-lg font-semibold">200HP</p>
+                                    </div>
+                                    <P class="text-left lg:text-xl md:text-xl text-lg font-semibold">Automatic</P>
+                                </div>
+                            </div> <br>
+                            <div class="space-y-[1rem] lg:text-left md:text-center text-center">
+                                <h3 class="font-semibold text-3xl">Infiniti z5</h3>
+                                <p class="font-semibold text-lg">$36,850</p>
+                                <p class="text-wrap text-gray-600">The Infiniti Z5 embodies style, performance, and
+                                    <span class="hidden sm:inline"><br></span> innovation in a striking package. With a
+                                    sleek design, <span class="hidden sm:inline"><br></span> luxurious interior.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 4TH CAR ENDS -->
+
+                        <!-- 5TH CAR STARTS -->
+                        <div class="car-card" data-style="Sedan" data-year="2015" data-model="Porsche">
+                            <div
+                                class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[28rem] lg:h-[28rem] md:w-[30rem] md:h-[30rem] h-[29rem] w-[26rem] pt-[5rem]">
+                                <div class="flex justify-center">
+                                    <img src="/images/featured-cars/fc5.png" alt="Image" class="min-w-[20rem]">
+                                </div>
+                                <hr class="lg:w-[26.5rem] md:w-[26.5rem] w-[24rem] border border-gray-200 ">
+                                <div class="space-y-4">
+                                    <div class="flex space-x-[3rem]">
+                                        <p class="lg:text-xl md:text-lg text-lg  font-semibold text-gray-800">Year: 2015
+                                        </p>
+                                        <p class="lg:text-xl md:text-xl text-lg font-semibold">3000 Mi</p>
+                                        <p class="lg:text-xl md:text-xl text-lg font-semibold">240HP</p>
+                                    </div>
+                                    <P class="text-left lg:text-xl md:text-xl text-lg font-semibold">Automatic</P>
+                                </div>
+                            </div> <br>
+                            <div class="space-y-[1rem] lg:text-left md:text-center text-center">
+                                <h3 class="font-semibold text-3xl">Porsche 718 cayman</h3>
+                                <p class="font-semibold text-lg">$48,500</p>
+                                <p class="text-wrap text-gray-600">The Porsche 718 Cayman is a masterpiece of precision
+                                    <span class="hidden sm:inline"><br></span> engineering, offering a perfect balance
+                                    of performance <span class="hidden sm:inline"><br></span> and style.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 5TH CAR ENDS -->
+
+                        <!-- 6TH CAR STARTS -->
+                        <div class="car-card" data-style="Sedan" data-year="2016" data-model="BMW">
+                            <div
+                                class="bg-white shadow-md rounded-lg space-y-[3rem] p-5 text-center lg:w-[28rem] lg:h-[28rem] md:w-[30rem] md:h-[30rem] h-[29rem] w-[26rem] pt-[5rem]">
+                                <div class="flex justify-center">
+                                    <img src="/images/featured-cars/fc8.png" alt="Image" class="min-w-[19rem]">
+                                </div>
+                                <hr class="lg:w-[26.5rem] md:w-[26.5rem] w-[24rem] border border-gray-200 ">
+                                <div class="space-y-4">
+                                    <div class="flex space-x-[3rem]">
+                                        <p class="lg:text-xl md:text-lg text-lg  font-semibold text-gray-800">Year: 2016
+                                        </p>
+                                        <p class="lg:text-xl md:text-xl text-lg font-semibold">5000 Mi</p>
+                                        <p class="lg:text-xl md:text-xl text-lg font-semibold">240HP</p>
+                                    </div>
+                                    <P class="text-left lg:text-xl md:text-xl text-lg font-semibold">Automatic</P>
+                                </div>
+                            </div> <br>
+                            <div class="space-y-[1rem] lg:text-left md:text-center text-center">
+                                <h3 class="font-semibold text-3xl">BMW xseries-6</h3>
+                                <p class="font-semibold text-lg">$89,395</p>
+                                <p class="text-wrap text-gray-600">The BMW X6 redefines SUV design with its bold coupe
+                                    <span class="hidden sm:inline"><br></span> like silhouette and commanding road
+                                    presence.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 6TH CAR ENDS -->
+
+        <!-- WHAT OUR CLIENTS SAY SECTION -->
+
+
+        <div>
+            <div class="">
+                <h2 class="font-semibold text-blue-600 text-center mb-6 text-4xl">What Our Client's Say</h2>
+                <hr class="border border-blue-600 w-[3rem] mx-auto"> <br> <br>
+            </div>
+            <div
+                class="flex flex-wrap justify-center font-[poppins] lg:space-x-[1rem] md:space-y-[2rem] space-y-[2rem] lg:space-y-[0rem] mb-[20rem]">
+
+                <!-- CARDS -->
+                <div
+                    class="bg-white shadow-md rounded-lg space-y-[2rem] p-5 text-center lg:w-[30rem] lg:h-[30rem] md:w-[30rem] md:h-[30rem] h-[30rem] w-[15rem] pt-[5rem] hover:bg-blue-600 group transition duration-300">
+                    <!-- ICON HEAD -->
+                    <div class="flex justify-center">
+                        <img src="/images/clients/c1.png" alt="Image" class="min-w-20 group-hover:text-white">
+                    </div>
+
+                    <p class="lg:text-xl md:text-xl text-sm text-gray-600 group-hover:text-white">
+                        I had an amazing experience with Caravan.
+                        The process of finding and buying
+                        my car was fast, easy,
+                        and completely hassle-free.
+                    </p>
+
+                    <div class="space-y-[1rem] pb-6">
+                        <p class="lg:text-2xl md:text-2xl text-lg font-semibold text-gray-800 group-hover:text-white">
+                            Tomas Lili</p>
+                        <p class="lg:text-2xl md:text-2xl text-lg font-semibold text-gray-800 group-hover:text-white">
+                            New York</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <hr class="border border-blue-600 group-hover:border-white w-[2rem]">
+                    </div>
+                </div>
+                <!-- CARDS END SECTION -->
+
+
+                <!-- Repeat Cards -->
+                <div
+                    class="bg-white shadow-md rounded-lg space-y-[2rem] p-5 text-center lg:w-[30rem] lg:h-[30rem] md:w-[30rem] md:h-[30rem] h-[30rem] w-[15rem] pt-[5rem] hover:bg-blue-600 group transition duration-300">
+                    <!-- ICON HEAD -->
+                    <div class="flex justify-center">
+                        <img src="/images/clients/c2.png" alt="Image" class="min-w-20">
+                    </div>
+
+                    <p class="lg:text-xl md:text-xl text-sm text-gray-600 group-hover:text-white">
+                        Caravan’s insurance support team was in
+                        credibly helpful when I needed to
+                        adjust my coverage.
+                        They guided me through every step,
+                    </p>
+
+                    <div class="space-y-[1rem]">
+                        <p class="lg:text-2xl md:text-2xl text-lg  font-semibold text-gray-800 group-hover:text-white">
+                            Romi Rain
+                        </p>
+                        <p class="lg:text-2xl md:text-2xl text-lg  font-semibold text-gray-800 group-hover:text-white">
+                            London</p>
+
+                    </div>
+                    <div class="flex justify-center">
+                        <hr class="border border-blue-600 w-[2rem]">
+                    </div>
+                </div> <br> <br>
+                <!-- REPEAT CARDS END SECTION -->
+
+
+                <!-- Repeat Cards -->
+                <div
+                    class="bg-white shadow-md rounded-lg space-y-[2rem] p-5 text-center lg:w-[30rem] lg:h-[30rem] md:w-[30rem] md:h-[30rem] h-[30rem] w-[15rem] pt-[5rem] hover:bg-blue-600 group transition duration-300">
+                    <!-- ICON HEAD -->
+                    <div class="flex justify-center">
+                        <img src="/images/clients/c3.png" alt="Image" class="min-w-20">
+                    </div>
+
+                    <p class="lg:text-xl md:text-xl text-sm text-gray-600 group-hover:text-white">
+                        Finding the perfect family car was a breeze
+                        thanks to Caravan. The website was easy to
+                        navigate, and the customer
+                        service was exceptional.
+                    </p>
+
+                    <div class="space-y-[1rem]">
+                        <p class="lg:text-2xl md:text-2xl text-lg  font-semibold text-gray-800 group-hover:text-white">
+                            John Doe
+                        </p>
+                        <p class="lg:text-2xl md:text-2xl text-lg  font-semibold text-gray-800 group-hover:text-white">
+                            Washington</p>
+
+                    </div>
+                    <div class="flex justify-center">
+                        <hr class="border border-blue-600 w-[2rem]">
+                    </div>
+                </div> <br> <br>
+            </div>
+            <!-- REPEAT CARDS END SECTION -->
+
+        </div>
+
+        <!-- BRANDS -->
+        <div id="BRANDS">
+            <div
+                class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-1 justify-items-center mb-[10rem]">
+                <div>
+                    <img src="/images/brand/br1.png" class="mb-9" alt="">
+                </div>
+                <div>
+                    <img src="/images/brand/br2.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/brand/br3.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/brand/br4.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/brand/br5.png" class="pl-8" alt="">
+                </div>
+                <div>
+                    <img src="/images/brand/br6.png" alt="">
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <!--Contact Page  -->
+        <div id="ContactUs">
+            <div class="mb-[10rem]">
+                <div class="flex  justify-center space-x-16">
+                    <div class="text-center pt-12  mb-[5rem]">
+                        <h3 class="text-blue-600 text-xl font-bold  pb-[1rem]">CONTACT US</h3>
+                        <h4 class="text-2xl md:text-4xl font-bold pb-5">Get In Touch With Us <span
+                                class="text-blue-600">Now</span>
+                        </h4>
+                        <hr class="bg-blue-600 h-[3px] w-[4rem] mx-auto">
+                    </div>
+                </div>
+
+
+                <div class="lg:flex lg:justify-center lg:space-y-0">
+                    <!-- Google Maps Embed -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.7420944130777!2d-77.12605780196631!3d39.066747377087275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cdb6158e80ff%3A0xe46e3f7999beec6d!2s1450%20Rockville%20Pike%2C%20Rockville%2C%20MD%2020852!5e0!3m2!1sen!2sus!4v1734550167592!5m2!1sen!2sus"
+                        class="lg:rounded-l-3xl md:hidden lg:block lg:h-[692px] lg:w-[500px] rounded:2xl h-[20rem] w-[25rem] mx-auto lg:mx-0 "
+                        frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- End of Google Maps Embed -->
+
+
+
+                    <div
+                        class="bg-white shadow-lg lg:h-[692px] md:h-[692px] h-[690px] lg:w-[40rem] w-[25rem] md:w-[40rem] mx-auto md:mx-0  lg:rounded-none lg:ml-0 md:ml-[4rem]">
+                        <div class="md:flex justify-center space-x-5 mb-[4rem]">
+                            <div class="bg-white h-[10rem] w-[10rem] hidden md:block rounded-3xl  shadow-lg">
+                                <div class="pt-[2rem] pb-[1rem] flex justify-center">
+                                    <img src="/images/phone-icon.png" alt="">
+                                </div>
+                                <p class=" font-semibold text-center  hover:text-blue-600"> +1 (222) 1234567890
+                                </p>
+                            </div>
+                            <div class="bg-white h-[10rem] w-[10rem]  hidden md:block rounded-3xl  shadow-lg">
+                                <div class="pt-[2rem] pb-[1rem] flex justify-center">
+                                    <img src="/images/email-icon.png" alt="">
+                                </div>
+                                <p class=" font-semibold text-center hover:text-blue-600">caravanorg1 <br> @gmail.com</p>
+                            </div>
+                            <div class="bg-white h-[10rem] w-[10rem]  hidden md:block rounded-3xl  shadow-lg">
+                                <div class="pt-[2rem] pb-[1rem] flex justify-center">
+                                    <img src="/images/location-icon.png" alt="">
+                                </div>
+                                <p class=" font-semibold text-center  hover:text-blue-600">1450 Rockville Pike
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:flex mx-10 justify-center md:space-x-5 lg:space-x-8">
+                            <div class="space-y-8">
+                                <div><input name="form1" id="name" type="text" placeholder="name"
+                                        class="w-[17rem] py-3 px-4 rounded-3xl hover:outline-none hover:border-[3px] hover:border-blue-300  border-[1px] outline-none hover:transition-none  ">
+                                </div>
+                                <div> <input name="form2" id="email" type="text" placeholder="Your Email"
+                                        class="w-[17rem]  py-3 px-4 rounded-3xl hover:outline-none hover:border-[3px] hover:border-blue-300  border-[1px] outline-none hover:transition-none  ">
+                                </div>
+                                <div> <input name="form3" id="subject" type="Subject" placeholder="Your Subject"
+                                        class="w-[17rem]  py-3 px-4 rounded-3xl hover:outline-none hover:border-[3px] hover:border-blue-300  border-[1px] outline-none hover:transition-none  ">
+                                </div> <br class="hidden md:block">
+                            </div>
+                            <div>
+                                <textarea name="Message" id="message"
+                                    class="h-[13rem] w-[16rem] rounded-3xl hover:outline-none hover:border-[3px] hover:border-blue-300 p-2  border-[2px] outline-none hover:transition-none"
+                                    id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="flex justify-center pt-[2rem]">
+                            <button type="submit" onclick="sendMail()"
+                                class="py-3 px-4 text-blue-600 hover:bg-blue-600 hover:text-white  bg-white border-[1px] border-blue-600 w-[35rem] transition duration-300 font-semibold rounded-2xl">Send
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.7420944130777!2d-77.12605780196631!3d39.066747377087275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cdb6158e80ff%3A0xe46e3f7999beec6d!2s1450%20Rockville%20Pike%2C%20Rockville%2C%20MD%2020852!5e0!3m2!1sen!2sus!4v1734550167592!5m2!1sen!2sus"
+                    class="rounded-3xl rounded-t hidden md:block lg:hidden md:w-[40rem]" height="692px"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact ends -->
+
+
+    <!-- FOOTER BEGINS-->
+    <div>
+        <footer class="bg-[#2A2D54]  lg:h-[20rem] h-[27rem] :w-full">
+            <div class="flex flex-wrap justify-center space-x-[4rem] p-5">
+                <div class="text-white">
+                    <h1 class="font-[Rufina] text-white text-2xl leading-5 tracking-widest font-bold pb-3">
+                        CARAVAN
+                    </h1>
+                    <p class="font-[Poppins]">© 2024 Caravan. All Rights Reserved. <br> Your trusted online car
+                        marketplace.</p> <br> <br>
+                    <p> Contact Us: <br>
+                        caravanorg1@gmail.com <br>
+                        +1 (222) 1234567890</p>
+                </div>
+
+                <div class="font-[Poppins] font-light">
+                    <h2 class="text-lg text-white">About Caravan</h2>
+                    <div>
+                        <ul class="text-gray-400">
+                            <li class="cursor-pointer hover:text-blue-600"><a href="#HOME">HOME</a>
+                            </li>
+                            <li class="cursor-pointer hover:text-blue-600"><a href="#ABOUTUS">ABOUT US</a>
+                            </li>
+                            <li class="cursor-pointer hover:text-blue-600"><a href="#RANGE">RANGE OF CARS</a>
+                            </li>
+                            <li class="cursor-pointer hover:text-blue-600"><a href="#Pre-OwnedCars">PRE-OWNED
+                                    CARS</a>
+                            </li>
+                            <li class="cursor-pointer hover:text-blue-600"><a href="#ContactUs">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="font-[poppins] font-light">
+                    <h2 class=" text-lg text-white">Top Brands</h2>
+                    <ul class="text-gray-400">
+                        <li>BMW</li>
+                        <li>Lamborghini</li>
+                        <li>Camaro</li>
+                        <li>Audi</li>
+                        <li>Infiniti</li>
+                        <li>Nissan</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- FOOTER ENDS -->
+
+
+
+
+    <!-- EMAIL.JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "50vDfq5YdrEbpfEy-",
+            });
+        })();
+    </script>
+    <script src="contact.js"></script>
+    <script src="Caravan.js"></script>
+
+
+
+</body>
+
+</html>
